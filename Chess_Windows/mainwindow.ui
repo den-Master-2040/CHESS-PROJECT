@@ -20,16 +20,13 @@
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>10</y>
+      <x>550</x>
+      <y>30</y>
       <width>191</width>
       <height>501</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="splitters">
-     <item>
-      <widget class="QLineEdit" name="lineEdit"/>
-     </item>
      <item>
       <widget class="QPushButton" name="pushButton2">
        <property name="text">
@@ -53,7 +50,7 @@
      <x>0</x>
      <y>0</y>
      <width>797</width>
-     <height>23</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

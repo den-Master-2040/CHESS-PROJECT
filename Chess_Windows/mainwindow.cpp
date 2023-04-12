@@ -43,7 +43,7 @@ void MainWindow::on_addButton_clicked()
         {
             QDynamicButton *button = new QDynamicButton(this);  // Создаем объект динамической кнопки
 
-            button->SetID(i*8 + j);                           //кривой ID
+            button->SetID(i*8 + j);                             // ID
 
             button->picture = chess.chess_map[i][j];            //цифра для дальнейшего наложения картинки на кнопку
 
@@ -92,25 +92,7 @@ void MainWindow::on_addButton_clicked()
     }
 }
 
-/* Метод для удаления динамической кнопки по её номеру
- * */
-void MainWindow::on_deleteButton_clicked()
-{
-    /* Выполняем перебор всех элементов слоя, где располагаются динамические кнопки
-     * */
-    for(int i = 0; i < m_vLaayout->count(); i++){
-        /* Производим каст элемента слоя в объект динамической кнопки
-         * */
-        QDynamicButton *button = qobject_cast<QDynamicButton*>(m_vLaayout->itemAt(i)->widget());
-        /* Если номер кнопки соответствует числу, которое установлено
-         * в lineEdit, то производим удаление данной кнопки
-         * */
-        if(button->getID() == ui->lineEdit->text().toInt()){
-            button->hide();
-            delete button;
-        }
-    }
-}
+
 
 /* СЛОТ для получения номера кнопки.
  * */
@@ -125,7 +107,7 @@ void MainWindow::slotGetNumber()
 
         figure_selected_by_the_player = id_button_local/8 + (id_button_local - (id_button_local/8 * 8) )*10;
         //                              //***строка (I)// + //*****************столбец (J)***************//
-        ui->lineEdit->setText(QString::number(id_button_local));
+
 
         counter_click_button++;             //кнопка была нажата, нужно увеличить счётчик
         return;
@@ -186,8 +168,4 @@ void MainWindow::on_pushButton2_clicked()
     update_chess_map();
 }
 
-void MainWindow::on_pushButton_3_clicked()
-{
-    on_deleteButton_clicked();
-}
 

@@ -18,7 +18,9 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+
     QVBoxLayout *m_vLaayout;
+
     ~MainWindow();
 
     CHESS chess;                    //логика шахмат
