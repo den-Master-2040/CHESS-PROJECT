@@ -20,41 +20,7 @@ bool CHESS::hod(int figure, int user_hod)
     else if (buff >=7)
         hod_player_2(figure,user_hod);
 }
-/*int main() {
-    auto figure = 00;
-    auto user_hod = 00;
-    bool gameend = mat();
-    while(!gameend)
-    {
-        print_chess_map();
-        cout <<"РџРµСЂРІС‹Рј С‡РёСЃР»РѕРј РІРІРµРґРёС‚Рµ С„РёРіСѓСЂСѓ, РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РёС‚Рµ РїРµСЂРµРґРІРёРЅСѓС‚СЊ, Р° РІС‚РѕСЂРѕР№ - РєСѓРґР° РїРµСЂРµРґРІРёРЅСѓС‚СЊ. РџРµСЂРІС‹РјРё С…РѕРґСЏС‚ Р±РµР»С‹Рµ - РѕС‚ 1 РґРѕ 6." << endl<< endl<< endl;
-        cin >> figure;
-        cin >> user_hod;
-        while(!hod_player_1(figure,user_hod))
-        {
-            print_chess_map();
-            cout <<"РҐРѕРґ РЅРµ СѓРґР°Р»СЃСЏ. Р’РІРµРґРёС‚Рµ РґСЂСѓРіРёРµ С„РёРіСѓСЂС‹ Рё РјРµСЃС‚Р° РґР»СЏ С…РѕРґР°." << endl<< endl<< endl;
-            cin >> figure;
-            cin >> user_hod;
-        }
-        print_chess_map();
-        if(mat()) return 0;
-        cout <<"Р—Р°С‚РµРј С‡РµСЂРЅС‹Рµ - РѕС‚ 7 РґРѕ 12" << endl<< endl<< endl;
-        cin >> figure;
-        cin >> user_hod;
-        while(!hod_player_2(figure,user_hod))
-        {
-            print_chess_map();
-            cout <<"РҐРѕРґ РЅРµ СѓРґР°Р»СЃСЏ. Р’РІРµРґРёС‚Рµ РґСЂСѓРіРёРµ С„РёРіСѓСЂС‹ Рё РјРµСЃС‚Р° РґР»СЏ С…РѕРґР°." << endl<< endl<< endl;
-            cin >> figure;
-            cin >> user_hod;
-        }
-        if(mat()) return 0;
-    }
 
-    return 0;
-}
-*/
 bool CHESS::hod_player_1(int figure, int user_hod)
 {
     //получаем координаты

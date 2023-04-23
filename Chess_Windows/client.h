@@ -12,20 +12,22 @@ public:
     Client();
     Client(QString ipAddres, int port);
     ~Client();
-
-private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
+    void connectToServer();
+    void SendToServer(QString str);
+    QString getStatusConnectToServer();
+    QString str; //данные
+    void getMessageFromServer();
 private:
 
     QString ipAddres;
     int port;
     QByteArray Data;
-    void SendToServer(QString str);
+    QTcpSocket *socket;
+    QString Status;
 public slots:
     void slotReadyRead();
+public: signals:
+    void signalReadyRead();
 };
 
 #endif // CLIENT_H

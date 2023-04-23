@@ -2,7 +2,7 @@
 
 Server::Server()
 {
-    if(this->listen(QHostAddress("192.168.0.67"), 2323))
+    if(this->listen(QHostAddress("192.168.1.65"), 2323))
     {
         qDebug() << "start";
     }
