@@ -27,10 +27,17 @@ void Client::SendToServer(QString str)
     socket->write(Data);
 }
 
+void Client::SendToServer(int arr[8][8])
+{
+    Data.clear();
+    QDataStream out(&Data, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_6_2);
+    out << arr;
+    socket->write(Data);
+}
+
 QString Client::getStatusConnectToServer()
 {
-
-
     if(socket->state() == QTcpSocket::ConnectedState)
         Status = "Connected!";
     else
@@ -57,6 +64,7 @@ void Client::slotReadyRead()
         in >>str;    
     else
         Status = "Error read";
+    qDebug() << str;
     signalReadyRead();
 }
 

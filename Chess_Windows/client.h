@@ -17,6 +17,7 @@ public:
     QString getStatusConnectToServer();
     QString str; //данные
     void getMessageFromServer();
+    void SendToServer(int arr[8][8]);
 private:
 
     QString ipAddres;
@@ -26,7 +27,8 @@ private:
     QString Status;
 public slots:
     void slotReadyRead();
-public: signals:
+
+signals:
     void signalReadyRead();
 };
 
