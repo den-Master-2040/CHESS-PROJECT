@@ -45,17 +45,24 @@ public:
     std::string color_black_map = "gray";
 
     int PlayerTeam = -1;    //0 - белые, 1 - черные
+
     bool hod_white_player = false;
 
     void update_chess_map();
 
     void update_chess_array(int arr[8][8]);
+
     void black_player_hod(QDynamicButton *button);
+
     void white_player_hod(QDynamicButton *button);
+
     void getClientStr();
 
+    void createPlayerMap();
+
+    void setVisibleButtonMap();
 private slots:
-    void setPlayerMap();    // СЛОТ-обработчик нажатия кнопки добавления
+
     void QualifierTeamWithButton();           // СЛОТ для получения номера нажатой кнопки
 
     void slotUpdateMap();

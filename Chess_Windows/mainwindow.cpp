@@ -20,10 +20,14 @@ MainWindow::MainWindow(QWidget *parent) :
 
     m_vLaayout = new QVBoxLayout(this);
 
-    setPlayerMap();
-
+    createPlayerMap();
     p_client = new Client("",0);
     connect(p_client, &Client::signalReadyRead,this, &MainWindow::slotUpdateMap);
+
+
+    //ui->splitters->setEnabled(false);
+
+
 
 }
 
@@ -35,7 +39,7 @@ MainWindow::~MainWindow()
 
 /* Метод для добавления динамической кнопки
  * */
-void MainWindow::setPlayerMap()
+void MainWindow::createPlayerMap()
 {
     for(int i = 0; i < 8;i++)
     {
@@ -80,9 +84,22 @@ void MainWindow::setPlayerMap()
             /* Подключаем сигнал нажатия кнопки к СЛОТ получения номера кнопки
              * */
             connect(button, SIGNAL(clicked()), this, SLOT(QualifierTeamWithButton()));
+            button->setVisible(false);
         }
     }
     update_chess_map();
+}
+
+void MainWindow::setVisibleButtonMap()
+{
+    for(int i = 0; i < m_vLaayout->count(); i++)
+    {
+        /* Производим каст элемента слоя в объект динамической кнопки
+         * */
+        QDynamicButton *button = qobject_cast<QDynamicButton*>(m_vLaayout->itemAt(i)->widget());
+
+        button->setVisible(true);
+    }
 }
 
 void MainWindow::QualifierTeamWithButton()
@@ -109,7 +126,7 @@ void MainWindow::slotUpdateMap()
     update_chess_array(arr);
     update_chess_map();
 
-    ui->label_5->setText("Делайте ход!");
+    //ui->label_5->setText("Делайте ход!");
 }
 
 void MainWindow::black_player_hod(QDynamicButton *button)
@@ -175,12 +192,12 @@ void MainWindow::black_player_hod(QDynamicButton *button)
 
     p_client->str = ""; // для того чтобы ограничить доступ к кнопкам - не будет выполняться первое условие
 
-    ui->label_5->setText("Ожидайте ход соперника..");
+    //ui->label_5->setText("Ожидайте ход соперника..");
 
     std::thread thread([this]()
     {
        getClientStr();
-       ui->label_5->setText("Делайте ход!");
+       //ui->label_5->setText("Делайте ход!");
     });
     thread.detach();
 }
@@ -252,10 +269,10 @@ void MainWindow::white_player_hod(QDynamicButton *button)
     hod_white_player = true;            //ход сделан
 
 
-    ui->label_5->setText("Ожидайте ход соперника..");
+    //ui->label_5->setText("Ожидайте ход соперника..");
     std::thread thread ([this](){
         getClientStr();
-        ui->label_5->setText("Делайте ход!");
+        //ui->label_5->setText("Делайте ход!");
     });
     thread.detach();
 }
@@ -278,7 +295,7 @@ void MainWindow::getClientStr()
     update_chess_array(arr);
     update_chess_map();
 
-    ui->label_5->setText("Делайте ход!");
+    //ui->label_5->setText("Делайте ход!");
 }
 
 void MainWindow::update_chess_map()
@@ -309,7 +326,7 @@ void MainWindow::update_chess_array(int arr[8][8])
 
 void MainWindow::Connect()
 {
-    p_client = new Client(ui->lineEdit->text(),ui->lineEdit_2->text().toInt());
+    p_client = new Client(ui->lineEdit_3->text(),ui->lineEdit_4->text().toInt());
 
     p_client->connectToServer();
 
@@ -324,13 +341,13 @@ void MainWindow::Connect()
             PlayerTeam = BLACK_PLAYER;
 
         }
-        if(p_client->str !="")
-        ui->label_4->setText(p_client->str);
+        //if(p_client->str !="")
+        //ui->label_4->setText(p_client->str);
     });
     thread.detach();
     std::thread thread2 ([this](){
         this_thread::sleep_for(std::chrono::milliseconds(500));
-        ui->label_3->setText(p_client->getStatusConnectToServer());
+        //ui->label_3->setText(p_client->getStatusConnectToServer());
     });
     thread2.detach();
 
@@ -341,7 +358,7 @@ void MainWindow::Connect()
         {
             p_client->str = "";
             getClientStr();
-            ui->label_5->setText("Делайте ход!");
+            //ui->label_5->setText("Делайте ход!");
         }
     });
     thread3.detach();
@@ -349,9 +366,9 @@ void MainWindow::Connect()
 
 void MainWindow::CheckConnect()
 {
-    if(p_client != nullptr)
-    ui->label_3->setText(p_client->getStatusConnectToServer());
-    else ui->label_3->setText("Client not created...");
+    //if(p_client != nullptr)
+    //ui->label_3->setText(p_client->getStatusConnectToServer());
+    //else ui->label_3->setText("Client not created...");
 }
 
 void MainWindow::CreateServer()
@@ -365,24 +382,23 @@ void MainWindow::CreateServer()
     Connect();
 }
 
-
-
-
-
 void MainWindow::on_pushButton_4_clicked()
 {
+    ui->splitters->setEnabled(false);
+    ui->splitters_2->setEnabled(false);
+    setVisibleButtonMap();
     CreateServer();
-}
 
+}
 
 void MainWindow::on_pushButton_clicked()
 {
     Connect();
 }
 
-
 void MainWindow::on_pushButton_2_clicked()
 {
-    CheckConnect();
+    ui->label_7->setVisible(false);
+    ui->pushButton_2->setVisible(false);
 }
 
