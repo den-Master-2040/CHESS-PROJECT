@@ -25,10 +25,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
 
     QVBoxLayout *m_vLaayout;
+    QWidget * wdg;
 
     ~MainWindow();
 
     CHESS m_chess;                    //логика шахмат
+
+    QVector <QDynamicButton*> arrButton;
 
     Server *p_server;
     Client *p_client;                  //сетевая логика
@@ -37,7 +40,8 @@ public:
     int figure_player = -1;
     int cell_player = -1;
 
-    int SIZE_BUTTON = 60;
+    int counter_pages = 1;
+    int SIZE_BUTTON = 100;
     int MERGE_BUTTON = 2;
     int color_backgroind_counter = 0;
 
@@ -67,7 +71,7 @@ private slots:
 
     void slotUpdateMap();
 
-    void Connect();
+    void Connect(QString ip, int port);
 
     void CheckConnect();
 
@@ -78,6 +82,12 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
 
 private:
     Ui::MainWindow *ui;

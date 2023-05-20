@@ -13,12 +13,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     /* Для удобства работы слои разделены QSplitter */
     ui->splitters->setStretchFactor(parent, 1);
     ui->splitters->setStretchFactor(parent, 0);
 
-    m_vLaayout = new QVBoxLayout(this);
+    wdg = new QWidget(this);
+    QLabel *lb = new QLabel(wdg);
+    lb->setGeometry(930,20,471,91);
+    lb->setText("No connect...");
+    ui->stackedWidget->insertWidget(5,wdg);
 
     createPlayerMap();
     p_client = new Client("",0);
@@ -28,6 +31,8 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->splitters->setEnabled(false);
 
 
+
+    ui->stackedWidget->setCurrentIndex(1);
 
 }
 
@@ -47,7 +52,7 @@ void MainWindow::createPlayerMap()
 
         for(int j = 0; j <8; j++)
         {
-            QDynamicButton *button = new QDynamicButton(this);  // Создаем объект динамической кнопки
+            QDynamicButton *button = new QDynamicButton(wdg);  // Создаем объект динамической кнопки
 
             button->SetID(i*8 + j);                             // ID
 
@@ -76,15 +81,17 @@ void MainWindow::createPlayerMap()
                                                         "border-radius: 0px;}"));
 
             color_backgroind_counter++;
+            arrButton.push_back(button);
 
             /* Добавляем кнопку в слой с вертикальной компоновкой
              * */
-            m_vLaayout->addWidget(button);
+            //m_vLaayout->addWidget(button);
+            //ui->stackedWidget->setCurrentIndex(5);
+            //ui->stackedWidget->setCurrentWidget(button);
 
             /* Подключаем сигнал нажатия кнопки к СЛОТ получения номера кнопки
              * */
             connect(button, SIGNAL(clicked()), this, SLOT(QualifierTeamWithButton()));
-            button->setVisible(false);
         }
     }
     update_chess_map();
@@ -92,14 +99,15 @@ void MainWindow::createPlayerMap()
 
 void MainWindow::setVisibleButtonMap()
 {
-    for(int i = 0; i < m_vLaayout->count(); i++)
+   /* for(int i = 0; i < wdg->(); i++)
     {
         /* Производим каст элемента слоя в объект динамической кнопки
-         * */
+         *
         QDynamicButton *button = qobject_cast<QDynamicButton*>(m_vLaayout->itemAt(i)->widget());
 
         button->setVisible(true);
     }
+*/
 }
 
 void MainWindow::QualifierTeamWithButton()
@@ -302,14 +310,13 @@ void MainWindow::update_chess_map()
 {
     /* Выполняем перебор всех элементов слоя, где располагаются динамические кнопки
      * */
-    for(int i = 0; i < m_vLaayout->count(); i++)
+    for(int i = 0; i < arrButton.size(); i++)
     {
         /* Производим каст элемента слоя в объект динамической кнопки
          * */
-        QDynamicButton *button = qobject_cast<QDynamicButton*>(m_vLaayout->itemAt(i)->widget());
+        QDynamicButton *button = qobject_cast<QDynamicButton*>(arrButton.at(i));
 
-        QPixmap pixmap("D:/projects/Chess_Windows/chess/" + QString::number(m_chess.chess_map[i/8][i%8]) + ".png");
-
+        QPixmap pixmap("D:/projects/CHESS-PROJECT-main/Chess_Windows/chess/" + QString::number(m_chess.chess_map[i/8][i%8]) + ".png");
         QIcon ButtonIcon(pixmap);
         button->setIcon(ButtonIcon);
         button->setIconSize(QSize(SIZE_BUTTON, SIZE_BUTTON));
@@ -324,9 +331,9 @@ void MainWindow::update_chess_array(int arr[8][8])
     update_chess_map();
 }
 
-void MainWindow::Connect()
+void MainWindow::Connect(QString ip, int port)
 {
-    p_client = new Client(ui->lineEdit_3->text(),ui->lineEdit_4->text().toInt());
+    p_client = new Client(ip,port);
 
     p_client->connectToServer();
 
@@ -341,8 +348,8 @@ void MainWindow::Connect()
             PlayerTeam = BLACK_PLAYER;
 
         }
-        //if(p_client->str !="")
-        //ui->label_4->setText(p_client->str);
+        if(p_client->str !="")
+        ui->label_6->setText(p_client->str);
     });
     thread.detach();
     std::thread thread2 ([this](){
@@ -379,26 +386,47 @@ void MainWindow::CreateServer()
 
     thread.detach();    
     this_thread::sleep_for(std::chrono::milliseconds(500));
-    Connect();
+    Connect(ui->lineEdit->text(),ui->lineEdit_2->text().toInt());
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
     ui->splitters->setEnabled(false);
-    ui->splitters_2->setEnabled(false);
-    setVisibleButtonMap();
+    //ui->splitters_2->setEnabled(false);
+    //setVisibleButtonMap();
     CreateServer();
-
+    ui->stackedWidget->setCurrentIndex(5);
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-    Connect();
+    Connect(ui->lineEdit_3->text(),ui->lineEdit_4->text().toInt());
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->label_7->setVisible(false);
-    ui->pushButton_2->setVisible(false);
+    ui->stackedWidget->setCurrentIndex(4);
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    counter_pages++;
+    qDebug() << counter_pages;
+    ui->stackedWidget->setCurrentIndex(counter_pages);
+}
+
+
+void MainWindow::on_pushButton_9_clicked()
+{
+    counter_pages--;
+    qDebug() << counter_pages;
+    ui->stackedWidget->setCurrentIndex(counter_pages);
 }
 
