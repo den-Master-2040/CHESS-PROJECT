@@ -17,11 +17,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->splitters->setStretchFactor(parent, 1);
     ui->splitters->setStretchFactor(parent, 0);
 
-    wdg = new QWidget(this);
-    QLabel *lb = new QLabel(wdg);
-    lb->setGeometry(930,20,471,91);
-    lb->setText("No connect...");
-    ui->stackedWidget->insertWidget(5,wdg);
+    m_wdg = new QWidget(this);
+    createGamePage();
+    ui->stackedWidget->insertWidget(5,m_wdg);
 
     createPlayerMap();
     p_client = new Client("",0);
@@ -34,6 +32,49 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->stackedWidget->setCurrentIndex(1);
 
+}
+
+void MainWindow::createGamePage()
+{
+    QLabel *lb = new QLabel(m_wdg);
+    lb->setGeometry(930,20,471,91);
+    lb->setStyleSheet("border-radius: 7px;"
+                      "font: 700 28pt Constantia;"
+                      "font-style: normal;"
+                      "color: #FFFFFF;");
+    lb->setText("No connect...");
+
+    p_bContinue = new QPushButton(m_wdg);
+    p_bContinue->setGeometry(940,180,271,81);
+    p_bContinue->setStyleSheet("	border-radius: 7px;"
+                               "font: 700 24pt Constantia;"
+                               "font-style: normal;"
+                               "color: #004220;");
+    p_bContinue->setText("Сходить");
+
+    p_bСancel = new QPushButton(m_wdg);
+    p_bСancel->setGeometry(1250,180,311,81);
+    p_bСancel->setStyleSheet("border-radius: 7px;"
+                             "font: 700 24pt Constantia;"
+                             "font-style: normal;"
+                             "color: #FFFFFF;");
+    p_bСancel->setText("Отмена");
+
+
+
+    p_bExit = new QPushButton(m_wdg);
+    p_bExit->setGeometry(1190,630,171,71);
+    p_bExit->setStyleSheet(	"border-radius: 7px;"
+                            "font: 700 24pt Constantia;"
+                            "font-style: normal;"
+                            "color: #991400;");
+    p_bExit->setText("Выход");
+
+    connect(p_bContinue,&QPushButton::clicked, this, &MainWindow::push_button_Continue);
+
+    connect(p_bСancel,&QPushButton::clicked, this, &MainWindow::push_button_Сancel);
+
+    connect(p_bExit,&QPushButton::clicked, this, &MainWindow::push_button_Exit);
 }
 
 MainWindow::~MainWindow()
@@ -52,7 +93,7 @@ void MainWindow::createPlayerMap()
 
         for(int j = 0; j <8; j++)
         {
-            QDynamicButton *button = new QDynamicButton(wdg);  // Создаем объект динамической кнопки
+            QDynamicButton *button = new QDynamicButton(m_wdg);  // Создаем объект динамической кнопки
 
             button->SetID(i*8 + j);                             // ID
 
@@ -190,24 +231,7 @@ void MainWindow::black_player_hod(QDynamicButton *button)
         counter_click_button = 0;
     }
     //////////////////////////////////////ОТПРАВКА ДАННЫХ/////////////////////////////////////////////////////////
-
-    QString msg = "";
-    for(int i = 0; i < 8;i++)
-        for(int j = 0; j < 8; j++)
-            msg += (char)(m_chess.chess_map[i][j] + '0');
-
-    p_client->SendToServer(msg);
-
-    p_client->str = ""; // для того чтобы ограничить доступ к кнопкам - не будет выполняться первое условие
-
-    //ui->label_5->setText("Ожидайте ход соперника..");
-
-    std::thread thread([this]()
-    {
-       getClientStr();
-       //ui->label_5->setText("Делайте ход!");
-    });
-    thread.detach();
+    readyToSendData = true;
 }
 
 void MainWindow::white_player_hod(QDynamicButton *button)
@@ -265,24 +289,11 @@ void MainWindow::white_player_hod(QDynamicButton *button)
 
 
     ////////////////////////////////////ОТПРАВКА ДАННЫХ//////////////////////////////////////////////////////////
-    QString msg = "";
-    for(int i = 0; i < 8;i++)
-        for(int j = 0; j < 8; j++)
-            msg += (char)(m_chess.chess_map[i][j] + '0');
 
-    qDebug() << msg;
-    p_client->SendToServer(msg);
-
-    p_client->str = "";
     hod_white_player = true;            //ход сделан
+    readyToSendData = true;
 
 
-    //ui->label_5->setText("Ожидайте ход соперника..");
-    std::thread thread ([this](){
-        getClientStr();
-        //ui->label_5->setText("Делайте ход!");
-    });
-    thread.detach();
 }
 
 void MainWindow::getClientStr()
@@ -331,6 +342,20 @@ void MainWindow::update_chess_array(int arr[8][8])
     update_chess_map();
 }
 
+void MainWindow::setBufferHod()
+{
+    for(int i = 0; i < 8; ++i)
+        for(int j = 0; j < 8; ++j)
+            buff_arr[i][j] = m_chess.chess_map[i][j];
+}
+
+void MainWindow::setChessMapInBuffer()
+{
+    for(int i = 0; i < 8; ++i)
+        for(int j = 0; j < 8; ++j)
+            m_chess.chess_map[i][j] = buff_arr[i][j];
+}
+
 void MainWindow::Connect(QString ip, int port)
 {
     p_client = new Client(ip,port);
@@ -369,6 +394,27 @@ void MainWindow::Connect(QString ip, int port)
         }
     });
     thread3.detach();
+}
+
+void MainWindow::sendData()
+{
+    QString msg = "";
+    for(int i = 0; i < 8;i++)
+        for(int j = 0; j < 8; j++)
+            msg += (char)(m_chess.chess_map[i][j] + '0');
+
+    p_client->SendToServer(msg);
+
+    p_client->str = ""; // для того чтобы ограничить доступ к кнопкам - не будет выполняться первое условие
+
+    //ui->label_5->setText("Ожидайте ход соперника..");
+
+    std::thread thread([this]()
+    {
+       getClientStr();
+       //ui->label_5->setText("Делайте ход!");
+    });
+    thread.detach();
 }
 
 void MainWindow::CheckConnect()
@@ -430,3 +476,22 @@ void MainWindow::on_pushButton_9_clicked()
     ui->stackedWidget->setCurrentIndex(counter_pages);
 }
 
+void MainWindow::push_button_Continue()
+{
+    qDebug() << "Continue";
+    setBufferHod();
+    if(readyToSendData)
+        sendData();
+    readyToSendData = false;
+}
+
+void MainWindow::push_button_Exit()
+{
+    qDebug() << "Exit";
+}
+
+void MainWindow::push_button_Сancel()
+{
+    setChessMapInBuffer();
+    qDebug() << "Сancel";
+}
