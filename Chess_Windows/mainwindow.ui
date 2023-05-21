@@ -30,14 +30,14 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>960</x>
-        <y>60</y>
+        <x>40</x>
+        <y>480</y>
         <width>471</width>
         <height>91</height>
        </rect>
@@ -60,7 +60,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>150</y>
+        <y>180</y>
         <width>341</width>
         <height>71</height>
        </rect>
@@ -87,10 +87,10 @@ QPushButton:pressed {
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>-10</y>
-        <width>421</width>
-        <height>211</height>
+        <x>40</x>
+        <y>40</y>
+        <width>291</width>
+        <height>121</height>
        </rect>
       </property>
       <property name="text">
@@ -104,7 +104,7 @@ QPushButton:pressed {
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>290</y>
+        <y>320</y>
         <width>341</width>
         <height>71</height>
        </rect>
@@ -346,7 +346,7 @@ QPushButton:pressed {
 	color: #FFFFFF;</string>
          </property>
          <property name="text">
-          <string>localhost</string>
+          <string>192.168.1.103</string>
          </property>
         </widget>
        </item>
@@ -497,9 +497,9 @@ QPushButton:pressed {
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>930</x>
-        <y>20</y>
-        <width>471</width>
+        <x>10</x>
+        <y>340</y>
+        <width>361</width>
         <height>91</height>
        </rect>
       </property>
@@ -507,12 +507,89 @@ QPushButton:pressed {
        <string notr="true">
 
 	border-radius: 7px;
-	font: 700 36pt &quot;Constantia&quot;;
+	font: 700 25pt &quot;Constantia&quot;;
 	font-style: normal;
 	color: #FFFFFF;</string>
       </property>
       <property name="text">
        <string>Нет подключения..</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>490</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #004220;
+	
+</string>
+      </property>
+      <property name="text">
+       <string>Сходить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>490</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Отмена</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>650</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #991400;
+	
+</string>
+      </property>
+      <property name="text">
+       <string>Выход</string>
       </property>
      </widget>
     </widget>

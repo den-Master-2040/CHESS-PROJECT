@@ -17,18 +17,16 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->splitters->setStretchFactor(parent, 1);
     //ui->splitters->setStretchFactor(parent, 0);
 
-    wdg = new QWidget(this);
-    QLabel *lb = new QLabel(wdg);
-    lb->setGeometry(130,520,49,16);
-    lb->setText("No connect...");
-    ui->stackedWidget->insertWidget(5,wdg);
+    m_wdg = new QWidget(this);
+    createGamePage();
+    ui->stackedWidget->insertWidget(5,m_wdg);
 
     createPlayerMap();
     p_client = new Client("",0);
     connect(p_client, &Client::signalReadyRead,this, &MainWindow::slotUpdateMap);
 
     ui->stackedWidget->setCurrentIndex(1);
-
+    setBufferHod();
 }
 
 MainWindow::~MainWindow()
@@ -36,6 +34,50 @@ MainWindow::~MainWindow()
     delete ui;
     delete p_client;
 }
+
+void MainWindow::createGamePage()
+{
+    QLabel *lb = new QLabel(m_wdg);
+    lb->setGeometry(10,340,361,91);
+    lb->setStyleSheet("border-radius: 7px;"
+                      "font: 700 28pt Constantia;"
+                      "font-style: normal;"
+                      "color: #FFFFFF;");
+    lb->setText("No connect...");
+
+    p_bContinue = new QPushButton(m_wdg);
+    p_bContinue->setGeometry(10,490,131,81);
+    p_bContinue->setStyleSheet("	border-radius: 7px;"
+                               "font: 700 24pt Constantia;"
+                               "font-style: normal;"
+                               "color: #004220;");
+    p_bContinue->setText("Сходить");
+
+    p_bСancel = new QPushButton(m_wdg);
+    p_bСancel->setGeometry(210,490,131,81);
+    p_bСancel->setStyleSheet("border-radius: 7px;"
+                             "font: 700 24pt Constantia;"
+                             "font-style: normal;"
+                             "color: #FFFFFF;");
+    p_bСancel->setText("Отмена");
+
+
+
+    p_bExit = new QPushButton(m_wdg);
+    p_bExit->setGeometry(130,650,101,41);
+    p_bExit->setStyleSheet(	"border-radius: 7px;"
+                            "font: 700 24pt Constantia;"
+                            "font-style: normal;"
+                            "color: #991400;");
+    p_bExit->setText("Выход");
+
+    connect(p_bContinue,&QPushButton::clicked, this, &MainWindow::push_button_Continue);
+
+    connect(p_bСancel,&QPushButton::clicked, this, &MainWindow::push_button_Сancel);
+
+    connect(p_bExit,&QPushButton::clicked, this, &MainWindow::push_button_Exit);
+}
+
 
 /* Метод для добавления динамической кнопки
  * */
@@ -47,7 +89,7 @@ void MainWindow::createPlayerMap()
 
         for(int j = 0; j <8; j++)
         {
-            QDynamicButton *button = new QDynamicButton(wdg);  // Создаем объект динамической кнопки
+            QDynamicButton *button = new QDynamicButton(m_wdg);  // Создаем объект динамической кнопки
 
             button->SetID(i*8 + j);                             // ID
 
@@ -105,6 +147,41 @@ void MainWindow::setVisibleButtonMap()
 */
 }
 
+void MainWindow::setBufferHod()
+{
+    for(int i = 0; i < 8; ++i)
+        for(int j = 0; j < 8; ++j)
+            buff_arr[i][j] = m_chess.chess_map[i][j];
+}
+
+void MainWindow::setChessMapInBuffer()
+{
+    for(int i = 0; i < 8; ++i)
+        for(int j = 0; j < 8; ++j)
+            m_chess.chess_map[i][j] = buff_arr[i][j];
+}
+
+void MainWindow::sendData()
+{
+    QString msg = "";
+    for(int i = 0; i < 8;i++)
+        for(int j = 0; j < 8; j++)
+            msg += (char)(m_chess.chess_map[i][j] + '0');
+
+    p_client->SendToServer(msg);
+
+    p_client->str = ""; // для того чтобы ограничить доступ к кнопкам - не будет выполняться первое условие
+
+    //ui->label_5->setText("Ожидайте ход соперника..");
+
+    std::thread thread([this]()
+    {
+       getClientStr();
+       //ui->label_5->setText("Делайте ход!");
+    });
+    thread.detach();
+}
+
 void MainWindow::QualifierTeamWithButton()
 {
     QDynamicButton* button = qobject_cast<QDynamicButton*>(sender());
@@ -134,16 +211,6 @@ void MainWindow::slotUpdateMap()
 
 void MainWindow::black_player_hod(QDynamicButton *button)
 {
-    ////////////////////////////////ЖДЕМ ХОД ПРОТИВНИКА И ОТОБРАЖАЕМ ЕГО ХОД///////////////////////////////////
-//    //client->slotReadyRead();
-
-//    QString data = p_client->str;
-//    if (data == "" || data == "You First" || data == "You Second")
-//    {
-//        ui->label_5->setText("Сейчас не ваш ход..");
-//        return;                                         //ждем ход белых
-//    }
-
     /////////////////////////////////////ОЖИДАЕМ ХОД ИГРОКА////////////////////////////////
 
 
@@ -154,7 +221,6 @@ void MainWindow::black_player_hod(QDynamicButton *button)
 
         figure_player = id_button_local/8 + (id_button_local - (id_button_local/8 * 8) )*10;
         //                              //***строка (I)// + //*****************столбец (J)***************//
-
 
         counter_click_button++;             //кнопка была нажата, нужно увеличить счётчик
         return;
@@ -184,25 +250,8 @@ void MainWindow::black_player_hod(QDynamicButton *button)
         cell_player =-1;
         counter_click_button = 0;
     }
-    //////////////////////////////////////ОТПРАВКА ДАННЫХ/////////////////////////////////////////////////////////
 
-    QString msg = "";
-    for(int i = 0; i < 8;i++)
-        for(int j = 0; j < 8; j++)
-            msg += (char)(m_chess.chess_map[i][j] + '0');
-
-    p_client->SendToServer(msg);
-
-    p_client->str = ""; // для того чтобы ограничить доступ к кнопкам - не будет выполняться первое условие
-
-    //ui->label_5->setText("Ожидайте ход соперника..");
-
-    std::thread thread([this]()
-    {
-       getClientStr();
-       //ui->label_5->setText("Делайте ход!");
-    });
-    thread.detach();
+    readyToSendData = true;
 }
 
 void MainWindow::white_player_hod(QDynamicButton *button)
@@ -216,7 +265,6 @@ void MainWindow::white_player_hod(QDynamicButton *button)
 
     }
 
-
     ///////////////////////////////////ПЕРВОЕ НАЖАТИЕ///////////////////////////////////////////////////////////
     if (counter_click_button == 0)
     {
@@ -229,7 +277,6 @@ void MainWindow::white_player_hod(QDynamicButton *button)
         counter_click_button++;             //кнопка была нажата, нужно увеличить счётчик
         return;
     }
-
 
     ///////////////////////////////ВТОРОЕ НАЖАТИЕ//////////////////////////////////////////////////////////////
     if (counter_click_button == 1)
@@ -246,7 +293,6 @@ void MainWindow::white_player_hod(QDynamicButton *button)
 
     }
 
-
     ////////////////////////////////////ОБРАБОТКА//////////////////////////////////////////////////////////////
     if(figure_player !=-1 && cell_player !=-1)
     {
@@ -258,26 +304,9 @@ void MainWindow::white_player_hod(QDynamicButton *button)
         counter_click_button = 0;
     }
 
-
     ////////////////////////////////////ОТПРАВКА ДАННЫХ//////////////////////////////////////////////////////////
-    QString msg = "";
-    for(int i = 0; i < 8;i++)
-        for(int j = 0; j < 8; j++)
-            msg += (char)(m_chess.chess_map[i][j] + '0');
-
-    qDebug() << msg;
-    p_client->SendToServer(msg);
-
-    p_client->str = "";
     hod_white_player = true;            //ход сделан
-
-
-    //ui->label_5->setText("Ожидайте ход соперника..");
-    std::thread thread ([this](){
-        getClientStr();
-        //ui->label_5->setText("Делайте ход!");
-    });
-    thread.detach();
+    readyToSendData = true;
 }
 
 void MainWindow::getClientStr()
@@ -297,6 +326,7 @@ void MainWindow::getClientStr()
         }
     update_chess_array(arr);
     update_chess_map();
+    setBufferHod();
 
     //ui->label_5->setText("Делайте ход!");
 }
@@ -310,8 +340,8 @@ void MainWindow::update_chess_map()
         /* Производим каст элемента слоя в объект динамической кнопки
          * */
         QDynamicButton *button = qobject_cast<QDynamicButton*>(arrButton.at(i));
-
-        QPixmap pixmap("D:/projects/worked/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/chess/" + QString::number(m_chess.chess_map[i/8][i%8]) + ".png");
+        //"D:/projects/worked/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/chess/" + QString::number(m_chess.chess_map[i/8][i%8]) + ".png"
+        QPixmap pixmap(":/chess/chess/" + QString::number(m_chess.chess_map[i/8][i%8]) + ".png");
 
         QIcon ButtonIcon(pixmap);
         button->setIcon(ButtonIcon);
@@ -330,8 +360,14 @@ void MainWindow::update_chess_array(int arr[8][8])
 
 void MainWindow::Connect(QString ip, int port)
 {
-    p_client = new Client(ip,port);
+    string ipS = ip.toStdString();
+    string s1;
+    remove_copy(ipS.begin(),ipS.end(), back_inserter(s1), '"');
 
+    ip = QString::fromStdString(s1);
+
+    p_client = new Client(ip,port);
+    qDebug() << ip << " " << port;
     p_client->connectToServer();
 
     std::thread thread ([this](){
@@ -385,34 +421,32 @@ void MainWindow::CreateServer()
     this_thread::sleep_for(std::chrono::milliseconds(500));
     Connect(ui->lineEdit->text(),ui->lineEdit_2->text().toInt());
 }
-
-
 //Кнопка создания игры
 void MainWindow::on_pushButton_4_clicked()
 {
     ui->splitters->setEnabled(false);
     //ui->splitters_2->setEnabled(false);
     //setVisibleButtonMap();
-    CreateServer();
-    ui->stackedWidget->setCurrentIndex(5);
+    //CreateServer();
+    ui->stackedWidget->setCurrentIndex(7);
 }
 
 void MainWindow::on_pushButton_clicked()
 {
+    //qDebug() << ui->lineEdit_3->text() << " " <<ui->lineEdit_4->text().toInt();
     Connect(ui->lineEdit_3->text(),ui->lineEdit_4->text().toInt());
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(4);
+    ui->stackedWidget->setCurrentIndex(5);
 }
-
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(3);
-}
 
+    ui->stackedWidget->setCurrentIndex(3);//
+}
 
 void MainWindow::on_pushButton_8_clicked()
 {
@@ -421,7 +455,6 @@ void MainWindow::on_pushButton_8_clicked()
     ui->stackedWidget->setCurrentIndex(counter_pages);
 }
 
-
 void MainWindow::on_pushButton_9_clicked()
 {
     counter_pages--;
@@ -429,9 +462,31 @@ void MainWindow::on_pushButton_9_clicked()
     ui->stackedWidget->setCurrentIndex(counter_pages);
 }
 
-
 void MainWindow::on_pushButton_7_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_pushButton_5_clicked(){}
+
+void MainWindow::push_button_Continue()
+{
+    qDebug() << "Continue";
+    setBufferHod();
+    if(readyToSendData)
+        sendData();
+    readyToSendData = false;
+}
+
+void MainWindow::push_button_Exit()
+{
+    qDebug() << "Exit";
+}
+
+void MainWindow::push_button_Сancel()
+{
+    setChessMapInBuffer();
+    qDebug() << "Сancel";
 }
 

@@ -3,5 +3,20 @@
         <file>res/121.png</file>
         <file>res/small.png</file>
         <file>res/logo.png</file>
+        <file>res/21.png</file>
+    </qresource>
+    <qresource prefix="/chess">
+        <file>chess/1.png</file>
+        <file>chess/2.png</file>
+        <file>chess/3.png</file>
+        <file>chess/4.png</file>
+        <file>chess/5.png</file>
+        <file>chess/6.png</file>
+        <file>chess/7.png</file>
+        <file>chess/8.png</file>
+        <file>chess/9.png</file>
+        <file>chess/10.png</file>
+        <file>chess/11.png</file>
+        <file>chess/12.png</file>
     </qresource>
 </RCC>

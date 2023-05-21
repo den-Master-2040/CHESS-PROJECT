@@ -24,8 +24,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
 
-    QVBoxLayout *m_vLaayout;
-    QWidget * wdg;
+    QVBoxLayout *m_vLaayout = nullptr;
+    QWidget * m_wdg = nullptr;
+    QPushButton *p_bContinue = nullptr;
+    QPushButton *p_bСancel = nullptr;
+    QPushButton *p_bExit = nullptr;
 
     ~MainWindow();
 
@@ -33,13 +36,14 @@ public:
 
     QVector <QDynamicButton*> arrButton;
 
-    Server *p_server;
-    Client *p_client;                  //сетевая логика
+    Server *p_server = nullptr;
+    Client *p_client = nullptr;                  //сетевая логика
 
     int counter_click_button = 0;
     int figure_player = -1;
     int cell_player = -1;
 
+    bool readyToSendData = false;
     int counter_pages = 1;
     int SIZE_BUTTON = 40;
     int MERGE_BUTTON = 2;
@@ -47,6 +51,8 @@ public:
 
     std::string color_white_map = "white";
     std::string color_black_map = "gray";
+
+    int buff_arr[8][8];
 
     int PlayerTeam = -1;    //0 - белые, 1 - черные
 
@@ -60,11 +66,20 @@ public:
 
     void white_player_hod(QDynamicButton *button);
 
+    void createGamePage();
+
     void getClientStr();
 
     void createPlayerMap();
 
     void setVisibleButtonMap();
+
+    void setBufferHod();
+
+    void setChessMapInBuffer();
+
+    void sendData();
+
 private slots:
 
     void QualifierTeamWithButton();           // СЛОТ для получения номера нажатой кнопки
@@ -91,8 +106,17 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_pushButton_5_clicked();
+
+    void push_button_Continue();
+
+    void push_button_Exit();
+
+    void push_button_Сancel();
+
+
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui = nullptr;
 };
 
 #endif // MAINWINDOW\_H
