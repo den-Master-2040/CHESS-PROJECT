@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>769</width>
-    <height>644</height>
+    <width>360</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,116 +16,589 @@
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x0:0, y0:0, x2:2, y2:2, stop:0 rgba(35, 31, 30, 255), stop:1 rgba(23, 26, 42, 255));</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget_2">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>60</y>
-      <width>191</width>
-      <height>261</height>
+      <x>0</x>
+      <y>-20</y>
+      <width>360</width>
+      <height>720</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="splitters">
-     <item>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="text">
-        <string>Создать игру</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="minimumSize">
-        <size>
-         <width>189</width>
-         <height>10</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>10</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>ip Addres</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit">
-       <property name="text">
-        <string>localhost</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="minimumSize">
-        <size>
-         <width>189</width>
-         <height>10</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>10</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>port</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="text">
-        <string>2323</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>присоединиться</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>no connect</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>60</y>
+        <width>471</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Нет подключения..</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Играть</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>-10</y>
+        <width>421</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="res.qrc">:/res/logo.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Настройки</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>460</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton_10</zorder>
+     <zorder>pushButton_11</zorder>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>308</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="splitters">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>189</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+
+</string>
+         </property>
+         <property name="text">
+          <string>ip Addres</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="styleSheet">
+          <string notr="true">	border-radius: 7px;
+	font-size: 20pt;
+	font-style: normal;
+	color: #FFFFFF;</string>
+         </property>
+         <property name="text">
+          <string>localhost</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>189</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+
+</string>
+         </property>
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="styleSheet">
+          <string notr="true">	border-radius: 7px;
+	font-size: 20pt;
+	font-style: normal;
+	color: #FFFFFF;</string>
+         </property>
+         <property name="text">
+          <string>2323</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string>Создать игру</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	border-radius: 7px;
+	font: 700 22pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Создание игры</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="splitters_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="minimumSize">
+          <size>
+           <width>189</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+
+</string>
+         </property>
+         <property name="text">
+          <string>ip Addres</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="styleSheet">
+          <string notr="true">	border-radius: 7px;
+	font-size: 20pt;
+	font-style: normal;
+	color: #FFFFFF;</string>
+         </property>
+         <property name="text">
+          <string>localhost</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="minimumSize">
+          <size>
+           <width>189</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+	border-radius: 7px;
+	font: 700 24pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+
+</string>
+         </property>
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="styleSheet">
+          <string notr="true">	border-radius: 7px;
+	font-size: 20pt;
+	font-style: normal;
+	color: #FFFFFF;</string>
+         </property>
+         <property name="text">
+          <string>2323</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 28pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string>Присоединиться</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	border-radius: 7px;
+	font: 700 22pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Подключение к игре</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>301</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Создать</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>340</y>
+        <width>301</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 28pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Подключиться</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>20</y>
+        <width>471</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>Нет подключения..</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>301</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 36pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Создать</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>310</y>
+        <width>301</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	box-sizing: border-box;
+	border: 3px solid #202252;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 38, 61, 255), stop:1 rgba(49, 35, 33, 255));
+	border-radius: 7px;
+	font: 700 28pt &quot;Constantia&quot;;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string>Подключиться</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>20</y>
-      <width>81</width>
-      <height>20</height>
+      <x>1410</x>
+      <y>840</y>
+      <width>80</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>Ваша команда</string>
+     <string>-&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QPushButton" name="pushButton_9">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>20</y>
-      <width>91</width>
-      <height>20</height>
+      <x>1270</x>
+      <y>840</y>
+      <width>80</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>состояние хода</string>
+     <string>&lt;-</string>
     </property>
    </widget>
   </widget>
@@ -134,13 +607,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>769</width>
+     <width>360</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

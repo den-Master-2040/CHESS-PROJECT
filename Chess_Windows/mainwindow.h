@@ -25,10 +25,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
 
     QVBoxLayout *m_vLaayout;
+    QWidget * wdg;
 
     ~MainWindow();
 
     CHESS m_chess;                    //логика шахмат
+
+    QVector <QDynamicButton*> arrButton;
 
     Server *p_server;
     Client *p_client;                  //сетевая логика
@@ -37,7 +40,8 @@ public:
     int figure_player = -1;
     int cell_player = -1;
 
-    int SIZE_BUTTON = 60;
+    int counter_pages = 1;
+    int SIZE_BUTTON = 40;
     int MERGE_BUTTON = 2;
     int color_backgroind_counter = 0;
 
@@ -45,22 +49,29 @@ public:
     std::string color_black_map = "gray";
 
     int PlayerTeam = -1;    //0 - белые, 1 - черные
+
     bool hod_white_player = false;
 
     void update_chess_map();
 
     void update_chess_array(int arr[8][8]);
+
     void black_player_hod(QDynamicButton *button);
+
     void white_player_hod(QDynamicButton *button);
+
     void getClientStr();
 
+    void createPlayerMap();
+
+    void setVisibleButtonMap();
 private slots:
-    void setPlayerMap();    // СЛОТ-обработчик нажатия кнопки добавления
+
     void QualifierTeamWithButton();           // СЛОТ для получения номера нажатой кнопки
 
     void slotUpdateMap();
 
-    void Connect();
+    void Connect(QString ip, int port);
 
     void CheckConnect();
 
@@ -71,6 +82,14 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_7_clicked();
 
 private:
     Ui::MainWindow *ui;

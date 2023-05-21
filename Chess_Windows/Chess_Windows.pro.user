@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 9.0.1, 2023-04-24T01:53:30. -->
+<!-- Written by QtCreator 9.0.1, 2023-05-21T12:31:15. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -89,6 +89,225 @@
  <data>
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Android.Device.Type</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Android Qt 6.4.2 Clang armeabi-v7a</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Android Qt 6.4.2 Clang armeabi-v7a</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{a09d38db-b004-4ce0-a256-31fba6081d94}</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\Build_Chess_Android</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/Build_Chess_Android</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_armeabi_v7a_a09d38-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_armeabi_v7a_a09d38-Release</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_armeabi_v7a_a09d38-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_armeabi_v7a_a09d38-Profile</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployQtStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployConfiguration2</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
+    <valuelist type="QVariantList" key="AndroidDeviceAbis">
+     <value type="QString">armeabi-v7a</value>
+     <value type="QString">armeabi</value>
+    </valuelist>
+    <value type="QString" key="AndroidDeviceSerialNumber">84JNW19C10007175</value>
+    <value type="int" key="AndroidVersion.ApiLevel">28</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Android.PostStartShellCmdListKey">
+     <value type="QString"></value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Android.PreStartShellCmdListKey">
+     <value type="QString"></value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">0</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Chess_Windows</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidRunConfiguration:D:/projects/worked/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/projects/worked/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.1</variable>
+  <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 6.4.2 MinGW 64-bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 6.4.2 MinGW 64-bit</value>
@@ -98,8 +317,8 @@
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\Chess_Windows\..\build-Chess_Windows-Desktop_Qt_6_4_2_MinGW_64_bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/build-Chess_Windows-Desktop_Qt_6_4_2_MinGW_64_bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\build_CHESS_MAIN</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/build_CHESS_MAIN</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -239,21 +458,638 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/projects/Chess_Windows/Chess_Windows.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/projects/Chess_Windows/Chess_Windows.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/projects/build-Chess_Windows-Desktop_Qt_6_4_2_MinGW_64_bit-Debug</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.2</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Android.Device.Type</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Android Qt 6.4.2 Clang x86_64</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Android Qt 6.4.2 Clang x86_64</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{51af0875-7168-4b83-9b91-c35878f9158b}</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Debug</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Release</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_64_51af08-Profile</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployQtStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployConfiguration2</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.3</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Android.Device.Type</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Android Qt 6.4.2 Clang x86</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Android Qt 6.4.2 Clang x86</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{05804334-e70e-40c7-8aa8-85be96ebb5e8}</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Debug</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Release</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_x86_058043-Profile</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployQtStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployConfiguration2</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.4</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Android.Device.Type</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Android Qt 6.4.2 Clang arm64-v8a</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Android Qt 6.4.2 Clang arm64-v8a</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{e31641b9-bdd1-4169-a0bc-61770bff153d}</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Debug</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Release</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\projects\работающее\CHESS_ANDROID\CHESS-PROJECT-main\Chess_Windows\..\build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/build-Chess_Windows-Android_Qt_6_4_2_Clang_arm64_v8a_e31641-Profile</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+      <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis"/>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Копирование данных приложения</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidPackageInstallationStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
+      <value type="QString" key="BuildTargetSdk">android-31</value>
+      <value type="QString" key="KeystoreLocation"></value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка Android APK</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.AndroidBuildApkStep</value>
+      <value type="bool" key="VerboseOutput">false</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">4</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Сборка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Очистка</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="int" key="SeparateDebugInfo">0</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployQtStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Развёртывание</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployConfiguration2</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Android.PostStartShellCmdListKey">
+     <value type="QString"></value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Android.PreStartShellCmdListKey">
+     <value type="QString"></value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">0</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidRunConfiguration:D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/projects/работающее/CHESS_ANDROID/CHESS-PROJECT-main/Chess_Windows/Chess_Windows.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
  </data>
  <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
-  <value type="qlonglong">1</value>
+  <value type="qlonglong">5</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
