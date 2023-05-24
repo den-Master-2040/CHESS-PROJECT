@@ -22,7 +22,7 @@ void Client::SendToServer(QString str)
 {
     Data.clear();
     QDataStream out(&Data, QIODevice::WriteOnly);
-    out.setVersion(QDataStream::Qt_6_2);
+    out.setVersion(QDataStream::Qt_5_15);
     out << str;
     socket->write(Data);
 }
@@ -31,7 +31,7 @@ void Client::SendToServer(int arr[8][8])
 {
     Data.clear();
     QDataStream out(&Data, QIODevice::WriteOnly);
-    out.setVersion(QDataStream::Qt_6_2);
+    out.setVersion(QDataStream::Qt_5_15);
     out << arr;
     socket->write(Data);
 }
@@ -49,7 +49,7 @@ void Client::getMessageFromServer()
 {
 
         QDataStream in(socket);
-        in.setVersion(QDataStream::Qt_6_2);
+        in.setVersion(QDataStream::Qt_5_15);
         if(in.status() == QDataStream::Ok)
             in >>str;
         else
@@ -59,7 +59,7 @@ void Client::getMessageFromServer()
 void Client::slotReadyRead()
 {
     QDataStream in(socket);
-    in.setVersion(QDataStream::Qt_6_2);
+    in.setVersion(QDataStream::Qt_5_15);
     if(in.status() == QDataStream::Ok)    
         in >>str;    
     else

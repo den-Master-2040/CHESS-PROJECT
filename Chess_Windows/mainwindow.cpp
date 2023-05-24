@@ -107,14 +107,14 @@ void MainWindow::createPlayerMap()
 
             /* Применение стиля к шахматной карте*/
             if(color_backgroind_counter%2)
-                button->setStyleSheet(QString::fromUtf8("QPushButton{"
+                button->setStyleSheet(QString::fromStdString("QPushButton{"
                                                         "background-color:" + color_white_map + ";"
                                                         "border-style: solid;"
                                                         "border-color: black;"
                                                         "border-width: 2px;"
                                                         "border-radius: 0px;}"));
             else
-                button->setStyleSheet(QString::fromUtf8("QPushButton{"
+                button->setStyleSheet(QString::fromStdString("QPushButton{"
                                                         "background-color:" + color_black_map + ";"
                                                         "border-style: solid;"
                                                         "border-color: black;"
