@@ -1,0 +1,11 @@
+chess.obj
+client.obj
+main.obj
+mainwindow.obj
+qdynamicbutton.obj
+server.obj
+qrc_res.obj
+moc_client.obj
+moc_mainwindow.obj
+moc_qdynamicbutton.obj
+moc_server.obj

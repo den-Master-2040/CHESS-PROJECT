@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.qtproject.example.Chess_Windows-mergeDebugResources-4:/values/values.xml",
+            "map": [
+                {
+                    "source": "D:\\projects\\Build_Chess_Android\\android-build\\res\\values\\libs.xml",
+                    "from": {
+                        "startLines": "4,16,8,22,20,23,21",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "152,517,211,751,652,803,702",
+                        "endLines": "6,18,14,22,20,23,21",
+                        "endColumns": "12,12,12,50,48,47,47",
+                        "endOffsets": "203,644,509,797,696,846,745"
+                    },
+                    "to": {
+                        "startLines": "2,5,8,15,17,18,20",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,239,540,699,740,878",
+                        "endLines": "4,7,14,15,17,18,20",
+                        "endColumns": "12,12,12,50,40,39,47",
+                        "endOffsets": "104,234,535,586,735,775,921"
+                    }
+                },
+                {
+                    "source": "D:\\Qt\\6.4.2\\android_armv7\\src\\android\\java\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "88,197",
+                        "endColumns": "107,97",
+                        "endOffsets": "191,290"
+                    },
+                    "to": {
+                        "startLines": "16,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "591,780",
+                        "endColumns": "107,97",
+                        "endOffsets": "694,873"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+org.qtproject.example.Chess_Windows-java-0 D:\Qt\6.4.2\android_armv7\src\android\java\res
+org.qtproject.example.Chess_Windows-pngs-1 D:\projects\Build_Chess_Android\android-build\build\generated\res\pngs\debug
+org.qtproject.example.Chess_Windows-resValues-2 D:\projects\Build_Chess_Android\android-build\build\generated\res\resValues\debug
+org.qtproject.example.Chess_Windows-rs-3 D:\projects\Build_Chess_Android\android-build\build\generated\res\rs\debug
+org.qtproject.example.Chess_Windows-mergeDebugResources-4 D:\projects\Build_Chess_Android\android-build\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+org.qtproject.example.Chess_Windows-mergeDebugResources-5 D:\projects\Build_Chess_Android\android-build\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+org.qtproject.example.Chess_Windows-merged_res-6 D:\projects\Build_Chess_Android\android-build\build\intermediates\merged_res\debug
+org.qtproject.example.Chess_Windows-android-build-7 D:\projects\Build_Chess_Android\android-build\res
+org.qtproject.example.Chess_Windows-debug-8 D:\projects\Build_Chess_Android\android-build\src\debug\res
