@@ -1,0 +1,11 @@
+release/chess.o
+release/client.o
+release/main.o
+release/mainwindow.o
+release/qdynamicbutton.o
+release/server.o
+release/qrc_res.o
+release/moc_client.o
+release/moc_mainwindow.o
+release/moc_qdynamicbutton.o
+release/moc_server.o
