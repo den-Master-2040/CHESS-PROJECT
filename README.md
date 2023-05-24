@@ -1,6 +1,7 @@
 
 ![image](https://github.com/den-Master-2040/CHESS-PROJECT/assets/107744290/8384392f-9f09-423c-b0c3-a2fe585d3a2c)
 ![image](https://github.com/den-Master-2040/CHESS-PROJECT/assets/107744290/84090499-ecbf-4dd8-a1cb-a344b4f6da52)
+![image](https://github.com/den-Master-2040/CHESS-PROJECT/assets/107744290/115519b4-2099-40ca-b795-91d8744cd933)
 
 Проект Кроссплатформенных шахмат. Начало разработки - январь 2023.
 Стек технолгий: С++, Qt, QTcpSockets.
